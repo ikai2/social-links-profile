@@ -81,7 +81,6 @@ button {
     color: var(--neutral-white);
     font-weight: 700;
     border: none;
-    flex: 1;
     padding-block: 0.75rem;
     border-radius: 8px;
     cursor: pointer;
