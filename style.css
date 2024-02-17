@@ -31,22 +31,43 @@ body {
 }
 
 .card {
+    max-width: 24rem;
+    width: 100%;
+    padding: 2.5rem;
     background-color: var(--neutral-dark-grey);
-    padding: 1rem;
-    border-radius: 20px;
-    display: grid;
-    justify-items: center;
-    gap: 1rem;
+    border-radius: 12px;
+    text-align: center;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+    width: 5.5rem;
+    aspect-ratio: 1;
     border-radius: 50%;
 }
 
+
 h1 {
     color: var(--neutral-white);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-info {
+    margin-block: 1.5rem;
+    color: var(--neutral-white);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.cart-address {
+    /* margin-block: 0.5rem 1rem; */
+    font-size: 14px;
+    color: var(--primary-green)
+}
+
+.cart-job {
+    font-weight: 400;
+    margin-block: 1.5rem;
 }
 .social-btns {
     display: flex;
@@ -57,8 +78,25 @@ h1 {
 
 button {
     background-color: var(--neutral-grey);
+    color: var(--neutral-white);
+    font-weight: 700;
     border: none;
     flex: 1;
-    padding-block: 0.5rem;
-    border-radius: 20px;
+    padding-block: 0.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    &:hover {
+        background-color: var(--primary-green);
+        color: var(--neutral-grey);
+    }
+}
+
+@media (max-width: 767px) {
+    body { 
+        padding-inline: 1.5rem;
+    }
+    .card {
+        padding-inline: 1.5rem;
+    }
 }
